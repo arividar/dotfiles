@@ -1,7 +1,4 @@
 # Good info on Powershell profiles can be found here: https://bit.ly/2UXCBBK
-# Emacs edit mode like in bash
-
-Import-Module Pscx
 
 # Recover the bash utils:
 Remove-Item alias:ls
@@ -16,4 +13,5 @@ function which
 	Get-Command $command | Select-Object -ExpandProperty Definition
 }
 
+# Emacs edit mode like in bash
 Set-PSReadLineOption -EditMode Emacs
