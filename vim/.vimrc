@@ -9,3 +9,5 @@ set nocompatible
 # Turn off the annoying error bells:
 set noerrorbells
 set vb t_vb=
+
+filetype plugin indent on
