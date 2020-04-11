@@ -9,4 +9,4 @@ Set-PSReadlineOption -BellStyle None
 
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Fish
+Set-Theme tehrob
