@@ -1,6 +1,3 @@
-# Good info on Powershell profiles can be found here: https://bit.ly/2UXCBBK
-# Emacs edit mode like in bash
-
 function which
 {
 	param($command)
@@ -8,3 +5,8 @@ function which
 }
 
 Set-PSReadLineOption -EditMode Emacs
+Set-PSReadlineOption -BellStyle None 
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme Fish
