@@ -1,4 +1,3 @@
-language en_US
 syntax on
 set ruler
 set number
@@ -19,10 +18,4 @@ set wildmode=longest,list
 
 filetype plugin indent on
 
-packadd minpac
-call minpac#init()
-
-call minpac#add('k-takata/minpac', { 'type': 'opt' })
-
-command! PackUpdate call minpac#update()
-command! PackClean call minpac#clean()
+imap jj <Esc>
