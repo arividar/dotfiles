@@ -1,4 +1,4 @@
-export ZSH="~/.oh-my-zsh"
+export ZSH="/home/vor/.oh-my-zsh"
 ZSH_THEME="bira"
 plugins=(git nvm)
 source $ZSH/oh-my-zsh.sh
