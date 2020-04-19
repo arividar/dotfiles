@@ -18,7 +18,7 @@ set wildmode=longest,list
 
 filetype plugin indent on
 
-imap jj <Esc>
+imap jk <Esc>
 
 nnoremap j gj
 nnoremap gj j
