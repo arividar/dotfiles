@@ -49,14 +49,14 @@
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "colorScheme": "Ubuntu",
+                "colorScheme": "Broadcast",
                 "source": "Windows.Terminal.Wsl"
             },
             {
                 "guid": "{1edfa511-cab1-4b6c-b2c7-a790f120fe9c}",
                 "name": "MINGW64 Bash",
                 "commandline": "C:\\Program Files\\Git\\bin\\bash.exe  --cd-to-home",
-                "colorScheme": "Broadcast",
+                "colorScheme": "Tango Dark",
                 "hidden": false
             },
             {
