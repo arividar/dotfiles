@@ -1,5 +1,3 @@
-# Good info on Powershell profiles can be found here: https://bit.ly/2UXCBBK
-
 Set-PSReadLineOption -EditMode Emacs
 Set-PSReadlineOption -BellStyle None
 
