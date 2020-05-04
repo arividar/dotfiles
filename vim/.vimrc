@@ -29,3 +29,5 @@ nnoremap gk k
 
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 
+autocmd vimenter * colorscheme gruvbox
+
