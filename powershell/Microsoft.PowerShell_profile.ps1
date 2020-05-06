@@ -4,7 +4,7 @@ Set-PSReadlineOption -BellStyle None
 Import-Module oh-my-posh
 Import-Module posh-git
 
-Set-Theme Powerlevel10k-Lean
+Set-Theme Sorin
 
 # Functions and aliases:
 function which
