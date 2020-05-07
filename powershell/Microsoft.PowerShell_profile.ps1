@@ -12,5 +12,5 @@ function which
     param($command)
     Get-Command $command | Select-Object -ExpandProperty Definition
 }
-Set-Alias l Get-ChildItem -Force
 
+function l { Get-ChildItem $args -Force }
