@@ -10,3 +10,7 @@ vim -u NONE -c "helptags ~/.vim/pack/ari/start/nerdtree/doc" -c q
 
 # gruvbox
 git clone https://github.com/morhetz/gruvbox.git ~/.vim/pack/ari/start/gruvbox
+
+# Prettier
+git clone https://github.com/prettier/vim-prettier ~/.vim/pack/ari/start/vim-prettier
+
