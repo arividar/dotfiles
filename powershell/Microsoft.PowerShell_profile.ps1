@@ -14,3 +14,5 @@ function which
 }
 
 function l { Get-ChildItem $args -Force }
+
+Remove-Alias ls
