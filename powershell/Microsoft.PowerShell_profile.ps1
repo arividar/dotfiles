@@ -1,10 +1,10 @@
-Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -EditMode Vi
 Set-PSReadlineOption -BellStyle None
 
 Import-Module oh-my-posh
 Import-Module posh-git
 
-Set-Theme Sorin
+Set-Theme tehrob
 
 # Functions and aliases:
 function which
