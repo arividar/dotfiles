@@ -13,3 +13,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 #Powershell:
 alias psh='pwsh -NoLogo'
 alias ps=psh
+
+# node and npm aliases:
+alias t='npm run test'

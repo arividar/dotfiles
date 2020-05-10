@@ -21,3 +21,6 @@ if (Test-Path Alias:ls) { Remove-Item Alias:ls }
 function l { & ls -XF }
 function ll { & ls -hAlF }
 
+# npm and node aliases
+function t { & npm run test }
+
