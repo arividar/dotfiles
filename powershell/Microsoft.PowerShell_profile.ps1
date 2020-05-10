@@ -7,12 +7,14 @@ Import-Module posh-git
 Set-Theme tehrob
 
 # Functions and aliases:
-function which
-{
+function which {
     param($command)
     Get-Command $command | Select-Object -ExpandProperty Definition
 }
 
 function l { Get-ChildItem $args -Force }
 
-Remove-Alias ls
+if (Test-Path Alias:ls) {
+    Remove-Item Alias:ls
+}
+
