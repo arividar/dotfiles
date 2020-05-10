@@ -16,8 +16,10 @@ function which {
     Get-Command $command | Select-Object -ExpandProperty Definition
 }
 
-# function l { Get-ChildItem $args -Force }
-Set-Alias l 'ls.exe -hAlF'
+function l { 
+    & ls.exe -hAlF 
+}
+
 Set-Alias ll l
 
 if (Test-Path Alias:ls) {
