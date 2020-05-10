@@ -1,5 +1,9 @@
 Set-PSReadLineOption -EditMode Vi
 Set-PSReadlineOption -BellStyle None
+Set-PSReadLineOption -Colors @{ 
+    Parameter = 'Blue'
+    Operator = 'Gray'
+}
 
 Import-Module oh-my-posh
 Import-Module posh-git
@@ -12,7 +16,9 @@ function which {
     Get-Command $command | Select-Object -ExpandProperty Definition
 }
 
-function l { Get-ChildItem $args -Force }
+# function l { Get-ChildItem $args -Force }
+Set-Alias l 'ls.exe -hAlF'
+Set-Alias ll l
 
 if (Test-Path Alias:ls) {
     Remove-Item Alias:ls
