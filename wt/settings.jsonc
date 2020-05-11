@@ -11,7 +11,7 @@
     "alwaysShowTabs": true,
     "showTabsInTitlebar": true,
     "showTerminalTitleInTitlebar": true,
-    "initialRows": 50,
+    "initialRows": 44,
     "initialCols": 120,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
 
@@ -28,8 +28,10 @@
     // Each one of them will appear in the 'New Tab' dropdown,
     //   and can be invoked from the commandline with `wt.exe -p xxx`
     // To learn more about profiles, visit https://aka.ms/terminal-profile-settings
-    "profiles": {
-        "defaults": {
+    "profiles":
+    {
+        "defaults":
+        {
             // Put settings here that you want to apply to all profiles.
             "fontSize": 14,
             "fontFace": "Cascadia Code PL",
@@ -39,9 +41,11 @@
             "cursorHeight": 10,
             "cursorColor": "#aaaaaa"
         },
-        "list": [
+        "list":
+        [
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "commandline": "C:/Program Files/PowerShell/7-preview/pwsh.exe -NoLogo",
                 "hidden": false,
                 "name": "PowerShell",
                 "colorScheme": "One Half Dark",
@@ -52,13 +56,14 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "colorScheme": "Broadcast",
-                "startingDirectory": "\\\\wsl$\\Ubuntu\\home\\ari",
+                "startingDirectory": "//wsl$/Ubuntu/home/ari",
                 "source": "Windows.Terminal.Wsl"
             },
             {
                 "guid": "{1edfa511-cab1-4b6c-b2c7-a790f120fe9c}",
                 "name": "MINGW64 Bash",
-                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe  --cd-to-home",
+                "icon": "C:/Program Files/Git/bin/gitbashlogo.png",
+                "commandline": "C:/Program Files/Git/bin/bash.exe  --cd-to-home",
                 "colorScheme": "Tango Dark",
                 "hidden": false
             },
@@ -87,60 +92,57 @@
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
     "schemes": [
-        {
-            "name": "Ubuntu",
-            "black": "#2e3436",
-            "red": "#cc0000",
-            "green": "#4e9a06",
-            "yellow": "#c4a000",
-            "blue": "#3465a4",
-            "purple": "#75507b",
-            "cyan": "#06989a",
-            "white": "#d3d7cf",
-            "brightBlack": "#555753",
-            "brightRed": "#ef2929",
-            "brightGreen": "#8ae234",
-            "brightYellow": "#fce94f",
-            "brightBlue": "#729fcf",
-            "brightPurple": "#ad7fa8",
-            "brightCyan": "#34e2e2",
-            "brightWhite": "#eeeeec",
-            "background": "#300a24",
-            "foreground": "#eeeeec"
-        },
-        {
-            "name": "Broadcast",
-            "black": "#000000",
-            "red": "#da4939",
-            "green": "#519f50",
-            "yellow": "#ffd24a",
-            "blue": "#6d9cbe",
-            "purple": "#d0d0ff",
-            "cyan": "#6e9cbe",
-            "white": "#ffffff",
-            "brightBlack": "#323232",
-            "brightRed": "#ff7b6b",
-            "brightGreen": "#83d182",
-            "brightYellow": "#ffff7c",
-            "brightBlue": "#9fcef0",
-            "brightPurple": "#ffffff",
-            "brightCyan": "#a0cef0",
-            "brightWhite": "#ffffff",
-            "background": "#2b2b2b",
-            "foreground": "#e6e1dc"
-        }
-    ],
+    {
+      "name": "Ubuntu",
+      "black": "#2e3436",
+      "red": "#cc0000",
+      "green": "#4e9a06",
+      "yellow": "#c4a000",
+      "blue": "#3465a4",
+      "purple": "#75507b",
+      "cyan": "#06989a",
+      "white": "#d3d7cf",
+      "brightBlack": "#555753",
+      "brightRed": "#ef2929",
+      "brightGreen": "#8ae234",
+      "brightYellow": "#fce94f",
+      "brightBlue": "#729fcf",
+      "brightPurple": "#ad7fa8",
+      "brightCyan": "#34e2e2",
+      "brightWhite": "#eeeeec",
+      "background": "#300a24",
+      "foreground": "#eeeeec"
+    },
+    {
+      "name": "Broadcast",
+      "black": "#000000",
+      "red": "#da4939",
+      "green": "#519f50",
+      "yellow": "#ffd24a",
+      "blue": "#6d9cbe",
+      "purple": "#d0d0ff",
+      "cyan": "#6e9cbe",
+      "white": "#ffffff",
+      "brightBlack": "#323232",
+      "brightRed": "#ff7b6b",
+      "brightGreen": "#83d182",
+      "brightYellow": "#ffff7c",
+      "brightBlue": "#9fcef0",
+      "brightPurple": "#ffffff",
+      "brightCyan": "#a0cef0",
+      "brightWhite": "#ffffff",
+      "background": "#2b2b2b",
+      "foreground": "#e6e1dc"
+    }],
     // Add custom keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
     // To learn more about keybindings, visit https://aka.ms/terminal-keybindings
-    "keybindings": [
+    "keybindings":
+    [
         // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
         // These two lines additionally bind them to Ctrl+C and Ctrl+V.
         // To learn more about selection, visit https://aka.ms/terminal-selection
-        {
-            "command": { "action": "copy", "singleLine": false },
-            "keys": "ctrl+c"
-        },
+        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
         { "command": "paste", "keys": "ctrl+v" },
 
         // Press Ctrl+Shift+F to open the search box
@@ -150,13 +152,6 @@
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        }
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
     ]
 }
