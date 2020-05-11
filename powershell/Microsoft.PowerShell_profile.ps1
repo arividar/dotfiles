@@ -17,7 +17,10 @@ function which {
 }
 
 # Set ls shortcuts the same as in bash/zsh:
-function l { & ls.exe -XF }
-function ll { & ls.exe -hAlF }
 if (Test-Path Alias:ls) { Remove-Item Alias:ls }
+function l { & ls -F }
+function ll { & ls -hAlF }
+
+# npm and node aliases
+function t { & npm run test }
 

@@ -1,12 +1,11 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="lambda"
+ZSH_THEME="muse"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Vim mode:
 bindkey -v
 
-bindkey jj vi-cmd-mode
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
 bindkey '^P' up-history
