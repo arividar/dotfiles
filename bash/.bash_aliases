@@ -1,9 +1,9 @@
 # Bash aliases
 
 # some more ls aliases
-alias ll='ls -alF'
+alias l='ls -lF'
+alias ll='ls -AlF'
 alias la='ls -A'
-alias l='ls -CF'
 alias t='npm run test'
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -14,4 +14,4 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias psh='pwsh -NoLogo'
 
 # Node and npm aliases:
-alias t='npm run test'
+alias t='clear;npm run test'
