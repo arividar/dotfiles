@@ -93,3 +93,5 @@ export LESS="-F -X $LESS"
 
 # Vi input mode:
 set -o vi
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
