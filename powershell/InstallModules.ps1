@@ -5,3 +5,4 @@ Install-Module Microsoft.PowerShell.ConsoleGuiTools -Scope CurrentUser
 
 # Install font Cascadia Mono Regular
 #    https://github.com/microsoft/cascadia-code
+#    https://github.com/tonsky/FiraCode
