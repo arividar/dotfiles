@@ -30,6 +30,6 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # Alias definitions:
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
+if [ -f ~/.sh_aliases ]; then
+    . ~/.sh_aliases
 fi
