@@ -94,4 +94,8 @@ export LESS="-F -X $LESS"
 # Vi input mode:
 set -o vi
 
-export BASH_SILENCE_DEPRECATION_WARNING=1
+# Suppress verbose ZSH warning when starting bash on MacOS
+if [[ $(uname -s) == Darwin ]]; then
+    export BASH_SILENCE_DEPRECATION_WARNING = 1
+    echo Running on MacOS $(uname -s) 
+fi
