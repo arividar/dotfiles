@@ -2,6 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="muse"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+unsetopt BEEP
 
 # Vim mode:
 bindkey -v
@@ -30,6 +31,6 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # Alias definitions:
-if [ -f ~/.sh_aliases ]; then
-    . ~/.sh_aliases
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
 fi
