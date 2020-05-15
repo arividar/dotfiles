@@ -17,7 +17,6 @@ function which {
 }
 
 # Set ls shortcuts the same as in bash/zsh:
-if (Test-Path Alias:ls) { Remove-Item Alias:ls }
 function l { & ls -lF }
 function ll { & ls -AlF }
 
