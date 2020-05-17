@@ -4,6 +4,9 @@ Set-PSReadLineOption -Colors @{
     Parameter = 'Blue'
     Operator = 'Gray'
 }
+# EditMode Vi sets RightArrow to ViForwardChar which does not 
+# do history command completion so we set it back to ForwardChar:
+Set-PSReadLineKeyHandler RightArrow ForwardChar
 
 Import-Module oh-my-posh
 Import-Module posh-git
@@ -18,8 +21,11 @@ function which {
 
 # Set ls shortcuts the same as in bash/zsh:
 if (Test-Path Alias:ls) { Remove-Item Alias:ls }
-function l { & ls -lF }
-function ll { & ls -AlF }
+function l { & ls -lF $args }
+function ll { & ls -AlF $args }
 
 # npm and node aliases
-function t { & npm run test }
+function rt { 
+    Clear-Host
+    & npm run test 
+}
