@@ -1,4 +1,7 @@
 #!/usr/bin/env zsh
+# My custom muse theme - to show hostname in prompt.
+# - copy to folder ~/.oh-my-zsh/custom/themes/muse.zsh-theme
+#
 #local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 setopt promptsubst
