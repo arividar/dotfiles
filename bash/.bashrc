@@ -27,7 +27,7 @@ shopt -s checkwinsize
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
 
-PS1='\[\e[32m\u\] \[\e[36m\w\] \[\e[33m\]\[\e[1m\]$ \[\e[0m\]'
+PS1='\[\e[32m\h\] \[\e[36m\w\] \[\e[33m\]\[\e[1m\]$ \[\e[0m\]'
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
