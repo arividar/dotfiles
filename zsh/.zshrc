@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="muse"
-plugins=(git)
+plugins=(git aws)
 source $ZSH/oh-my-zsh.sh
 unsetopt BEEP
 
