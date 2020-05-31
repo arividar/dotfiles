@@ -15,6 +15,7 @@ set expandtab
 set shiftwidth=4
 set autoindent
 set wildmode=longest,list
+set hlsearch
 
 filetype plugin indent on
 

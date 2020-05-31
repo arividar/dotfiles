@@ -15,4 +15,5 @@ alias pwsh='pwsh -NoLogo'
 alias psh='pwsh -NoLogo'
 
 # Node and npm aliases:
-alias t='clear;npm run test'
+alias rt='clear;npm run test'
+
