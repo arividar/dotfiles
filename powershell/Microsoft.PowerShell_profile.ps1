@@ -29,3 +29,8 @@ function rt {
     Clear-Host
     & npm run test 
 }
+
+# git shortcuts:
+function glog {
+    & git log --graph --pretty=oneline --abbrev-commit --decorate --all
+}
