@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Stolen from @tlberglund who "ruthlessly stole it
+# Generates a number of files and commits them (mainly for studying Git).
+
+# This script is stolen from @tlberglund who in turn "ruthlessly stole it
 # (collaborated) from @matthewmccullough".
 
 #Ensure we have the quantity specified on the CLI
