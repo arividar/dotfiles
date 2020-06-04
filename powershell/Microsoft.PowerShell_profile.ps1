@@ -35,5 +35,5 @@ function glog {
     & git log --graph --pretty=oneline --abbrev-commit --decorate --all
 }
 
-# LC_ALL is needed for git log UTF-8 output (e.g. in git log)
+# LC_ALL is needed for git log utf-8 output (e.g. in git log)
 $Env:LC_ALL='C.UTF-8'
