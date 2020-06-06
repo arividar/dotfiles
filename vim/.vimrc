@@ -20,6 +20,8 @@ set hlsearch
 filetype plugin indent on
 
 let mapleader=","
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'molokai'
 
 imap jk <Esc>
 
