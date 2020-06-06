@@ -21,7 +21,8 @@ filetype plugin indent on
 
 let mapleader=","
 
-imap jk <Esc>
+inoremap jk <Esc>
+xnoremap jk <Esc>
 
 nnoremap j gj
 nnoremap gj j
@@ -30,6 +31,7 @@ nnoremap gk k
 
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 
+" Move selected block:
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
