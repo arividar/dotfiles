@@ -30,6 +30,9 @@ nnoremap gk k
 
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 
+vnoremap J :m '>+1<CR>gv=gV
+vnoremap K :m '<-2<CR>gv=gV
+
 colorscheme gruvbox
 set background=dark
 
