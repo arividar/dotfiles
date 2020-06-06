@@ -23,7 +23,8 @@ let mapleader=","
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'molokai'
 
-imap jk <Esc>
+inoremap jk <Esc>
+xnoremap jk <Esc>
 
 nnoremap j gj
 nnoremap gj j
@@ -31,6 +32,10 @@ nnoremap k gk
 nnoremap gk k
 
 nnoremap <Leader>f :NERDTreeToggle<Enter>
+
+" Move selected block:
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
 colorscheme gruvbox
 set background=dark
