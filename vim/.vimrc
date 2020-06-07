@@ -18,7 +18,7 @@ set wildmode=longest,list
 set hlsearch
 
 filetype plugin indent on
-set updatetime=100
+set updatetime=200
 
 let mapleader=","
 

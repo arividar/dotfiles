@@ -1,5 +1,7 @@
-set macligatures
+if has("mac")
+    set macligatures
+endif
 set guifont=Fira\ Code:h14
-colorscheme slate
-set columns=110
-set lines=40
+colorscheme gruvbox
+set columns=112
+set lines=48
