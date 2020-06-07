@@ -19,6 +19,7 @@ set hlsearch
 
 filetype plugin indent on
 set updatetime=200
+set signcolumn=yes
 
 let mapleader=","
 
