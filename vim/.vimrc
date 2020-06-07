@@ -20,11 +20,16 @@ set hlsearch
 filetype plugin indent on
 
 let mapleader=","
+
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'molokai'
 
+let g:gitgutter_git_executable = 'C:\Program Files\Git\cmd\git.exe'
+let g:gitgutter_enabled = 1
+let g:gitgutter_highlight_lines = 1
+
 inoremap jk <Esc>
-xnoremap jk <Esc>
+vnoremap jk <Esc>
 
 nnoremap j gj
 nnoremap gj j
