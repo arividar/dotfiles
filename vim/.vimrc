@@ -22,6 +22,7 @@ set updatetime=200
 set signcolumn=yes
 
 let mapleader=","
+let NERDTreeShowHidden = 1
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'molokai'
