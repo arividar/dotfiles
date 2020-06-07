@@ -25,10 +25,6 @@ let mapleader=","
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'molokai'
 
-if has('win32')
-    let g:gitgutter_git_executable = 'C:\Program Files\Git\cmd\git.exe'
-endif
-
 let g:gitgutter_enabled = 1
 let g:gitgutter_realtime = 1
 
