@@ -16,10 +16,10 @@ set shiftwidth=4
 set autoindent
 set wildmode=longest,list
 set hlsearch
-
-filetype plugin indent on
 set updatetime=200
 set signcolumn=yes
+
+filetype plugin indent on
 
 let mapleader=","
 let NERDTreeShowHidden = 1
