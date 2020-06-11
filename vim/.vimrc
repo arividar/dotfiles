@@ -37,8 +37,10 @@ nnoremap j gj
 nnoremap gj j
 nnoremap k gk
 nnoremap gk k
-
-nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <c-j> i<CR><ESC>
+nnoremap <leader>o o<Esc>
+nnoremap <leader>O i<CR><Esc>k
+nnoremap <leader>f :NERDTreeToggle<Enter>
 
 " Move selected block:
 vnoremap J :m '>+1<CR>gv=gv
