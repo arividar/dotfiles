@@ -17,7 +17,7 @@ function WriteScreenshotMac([string]$screenShotPath) {
 }
 
 
-[string]$capFilename = "$PSScriptRoot\shot.jpg"
+[string]$capFilename = "$PSScriptRoot/shot.jpg"
 
 if ($IsWindows) {
     WriteScreenShotWin $capFilename
