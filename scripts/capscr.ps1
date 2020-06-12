@@ -1,4 +1,4 @@
-#!/usr/local/bin/pwsh
+#!pwsh
 
 Set-Variable capPath -option Readonly -value '/Users/ari/OneDrive/TimeTrack/Capture' 
 
@@ -26,12 +26,9 @@ elseif ($IsMacOS) {
     WriteScreenShotMac $capFilename
 }
 else {
-    throw "Only MacOS and Windows supported"
+    Write-Error "Only MacOS and Windows supported"
     exit
 }
 
 Write-Output "Screenshot saved to: $capFilename"
-
-
-
 
