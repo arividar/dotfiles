@@ -17,7 +17,7 @@ function WriteScreenshotMac([string]$screenShotPath) {
 }
 
 
-[string]$capFilename = "$PSScriptRoot/shot.jpg"
+$capFilename = Join-Path -Path $PSScriptRoot -ChildPath "shot.jpg"
 
 if ($IsWindows) {
     WriteScreenShotWin $capFilename
