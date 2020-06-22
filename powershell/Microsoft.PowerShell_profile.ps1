@@ -32,7 +32,7 @@ function rt {
 
 # git shortcuts:
 function glog {
-    & git log --graph --pretty=oneline --abbrev-commit --decorate --all
+    & git log -32 --graph --pretty=oneline --abbrev-commit --decorate --all
 }
 
 # LC_ALL is needed for git log utf-8 output (e.g. in git log)
