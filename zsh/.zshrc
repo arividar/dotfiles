@@ -33,3 +33,7 @@ export NVM_DIR="$HOME/.nvm"
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
+
+# Set X display for WSL
+XURL=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
+export DISPLAY=$XURL:0.0
