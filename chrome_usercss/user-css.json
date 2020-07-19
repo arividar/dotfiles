@@ -1,0 +1,17 @@
+{
+    "userCSSoptions": {
+        "theme": "the-matrix",
+        "font": "font%3A%2016px%2F20px%20monospace",
+        "width": "254",
+        "height": "224",
+        "dock": "right",
+        "opacity": "100"
+    },
+    "userCSSstyles": [
+        {
+            "site": "app.asana.com",
+            "styles": ".AsanaMain-sidebar {\n    width: 444px;\n}",
+            "toggle": 1
+        }
+    ]
+}
