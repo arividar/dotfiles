@@ -8,6 +8,7 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
+    "startOnUserLogin": true,
     "alwaysShowTabs": true,
     "showTabsInTitlebar": true,
     "showTerminalTitleInTitlebar": true,
@@ -33,6 +34,7 @@
             // Put settings here that you want to apply to all profiles.
             "fontSize": 14,
             "fontFace": "Fira Code",
+            "fontWeight": "normal",
             "useAcrylic": true,
             "acrylicOpacity": 1,
             "cursorShape": "vintage",
@@ -161,6 +163,13 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        }
+        },
+        { "command": "toggleFocusMode", "keys": "shift+f11" },
+        { "command": "toggleAlwaysOnTop", "keys": "alt+shift+t" },
+        { "command": "commandPalette", "keys": "ctrl+shift+p" },
+        { "command": { "action": "setTabColor", "color": "#ffffff" }, "keys": "ctrl+shift+a" },
+        { "command": "openTabColorPicker", "keys": "ctrl+shift+b" },
+        { "command": "toggleRetroEffect", "keys": "ctrl+shift+d" }
+
     ]
 }
