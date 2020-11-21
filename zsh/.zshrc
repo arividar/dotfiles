@@ -35,5 +35,5 @@ if [ -f ~/.aliases ]; then
 fi
 
 # Set X display for WSL
-XURL=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
-export DISPLAY=$XURL:0.0
+# XURL=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
+# export DISPLAY=$XURL:0.0
