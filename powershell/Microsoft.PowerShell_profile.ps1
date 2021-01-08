@@ -23,6 +23,9 @@ function which {
 if (Test-Path Alias:ls) { Remove-Item Alias:ls }
 function l { & ls -lF $args }
 function ll { & ls -AlF $args }
+if ($IsWindows) {
+    Set-Alias -Name python3 -Value python
+}
 
 # npm and node aliases
 function rt { 
