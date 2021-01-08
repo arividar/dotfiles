@@ -51,5 +51,4 @@ set background=dark
 
 autocmd FileType html setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
-autocmd FileType python setlocal formatprg=autopep8\ -
 
