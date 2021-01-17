@@ -1,0 +1,7 @@
+/* Widen task list custom field columns (type: Drop-down). */
+.CustomPropertyHeader–editable .CustomPropertyHeader-fieldHeading–enum {
+  width: 100px;
+}
+.CustomPropertyEnumEditablePreviewCell {
+  width: 120px;
+}
