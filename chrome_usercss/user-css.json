@@ -1,17 +1,14 @@
 {
     "userCSSoptions": {
-        "theme": "the-matrix",
+        "theme": "default",
         "font": "font%3A%2016px%2F20px%20monospace",
-        "width": "254",
-        "height": "224",
+        "width": "724",
+        "height": "300",
         "dock": "right",
-        "opacity": "100"
+        "opacity": "95"
     },
-    "userCSSstyles": [
-        {
-            "site": "app.asana.com",
-            "styles": ".AsanaMain-sidebar {\n    width: 444px;\n}",
-            "toggle": 1
-        }
-    ]
-}
+    "userCSSstyles": [{
+        "site": "app.asana.com",
+        "styles": "/* Widen task list custom field columns (type: Drop-down). */\n.AsanaMain-sidebar {\n    display: flex;\n    flex: 0 0 auto;\n    flex-direction: column;\n    transition: margin-left 250ms ease-out,transform 250ms ease-out;\n    width: 400px !important;\n}\n\n\n/* Works on mac but not Windows:\n.CustomPropertyHeader–editable .CustomPropertyHeader-fieldHeading–enum {\n  width: 100px;\n}\n.CustomPropertyEnumEditablePreviewCell {\n  width: 120px;\n}\n*/",
+        "toggle": 1
+    }]
