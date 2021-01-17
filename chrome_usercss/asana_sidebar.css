@@ -1,0 +1,7 @@
+.AsanaMain-sidebar {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    transition: margin-left 250ms ease-out,transform 250ms ease-out;
+    width: 400px !important;
+}
